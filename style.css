@@ -1,0 +1,79 @@
+.navbar {
+    background-color: black;
+    
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ li {
+    float: left;
+   
+    
+}
+li a, .dropbtn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border:none;
+     padding : 15px 22px  19px 28px;
+    
+    text-align: center;
+}
+
+ li a:hover{
+    color: red;
+    cursor: pointer;
+}
+li .dropdown {
+    display: inline-block;
+    position: relative;
+   
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+    
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 5px 22px  19px 28px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {background-color: hsl(0, 8%, 18%);}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.searchbar {
+    float: right;
+    padding: 14px 2px;
+    margin-right: 2px;
+    border: none;
+    
+}
+.searchbtn {
+    float: right;
+    padding:5px 21px;
+    margin: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.searchbtn:hover {
+    background-color: hsl(0, 93%, 28%);
+    color: rgb(200, 195, 195);
+}
