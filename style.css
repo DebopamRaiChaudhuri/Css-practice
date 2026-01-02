@@ -1,10 +1,20 @@
-.navbar {
-    background-color: black;
-    
-    border-radius: 5px;
-    margin: 0;
+nav {
+     position: sticky;
+    top: 79px;
+    z-index: 1000;
+    box-sizing: border-box;
+    margin: -8px;
     padding: 0;
+    margin-right: 8px;
+}
+
+.navbar {
+    background-color: #610a76;
+    
+    /* border-radius: 5px; */
+   
     list-style-type: none;
+   
 }
  li {
     float: left;
@@ -33,9 +43,9 @@ li .dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000000;
+    background-color: #610a76;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px #610a76;
     z-index: 999;
     
 }
@@ -47,7 +57,7 @@ li .dropdown {
   display: block;
   text-align: left;
 }
-.dropdown-content a:hover {background-color: hsl(0, 8%, 18%);}
+.dropdown-content a:hover {background-color: #370345;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -68,7 +78,7 @@ li .dropdown {
     float: right;
     padding:5px 21px;
     margin: 10px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 0, 76);
     color: white;
     border-radius: 20px;
     cursor: pointer;
@@ -77,30 +87,96 @@ li .dropdown {
     background-color: hsl(0, 93%, 28%);
     color: rgb(200, 195, 195);
 }
-
+ul {
+    margin: 0;
+    padding: 0;
+}
+ 
 img {
     width: 50px;
     height: 50px;
    
-    display: flex;
-    align-items: left;
-}
+    /* display: flex;
+    align-items: left; */
+} 
 p {
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: "Atkinson Hyperlegible Mono", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
     display: flex;
-    margin: 0;
-    padding-left: 5px;
+    margin: 0; */
+    padding-left: 5px; 
+   
 
-}
+ }
 .title {
-    display: flex;
+    
     align-items: center;
+    
+    background-color:#760c90;
+    position:sticky;
+    color: white;
+     font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+    display: flex;
+    
+   
+   
+}
+body {
+    
+  height: 3000px; /* Set a fixed height for the container */
+  overflow-y: auto; /* Adds a vertical scrollbar only when needed */
+  /* or use overflow-y: scroll; to always show the scrollbar */
+  width: 100%; /* Optional: set width */
+  padding: -8px;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure the header stays above other content */
+    box-sizing: border-box;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-right: 8px;
+    padding: 0;
+    
+}
+
+.video-wrapper {
+  position: relative;   /* 🔴 REQUIRED */
+  width: 100%;
+  height: 100vh;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0px;
-    background-color: hsl(0, 0%, 100%);
+    padding : 0;
+    object-fit:cover;
+    overflow: hidden;
+    z-index: -1; /*  Ensure the video stays behind other content */
+ }
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 1; /* Ensure the text stays above the video */
 }
