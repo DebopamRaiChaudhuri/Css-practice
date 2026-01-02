@@ -3,7 +3,7 @@
 This repository contains my **CSS practice work**, where I focused on understanding and applying **core CSS concepts** by building an **interactive website**.
 
 The goal of this project was to strengthen my fundamentals by combining **HTML structure with CSS styling and layout techniques**, and by implementing interactive UI elements such as a **dropdown menu**.
-
+Website: https://debopamraichaudhuri.github.io/Css-practice/
 ---
 
 ##  What I Worked On
