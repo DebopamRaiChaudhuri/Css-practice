@@ -1,40 +1,11 @@
-@media (max-width: 768px) {
-
-  .navbar {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .navbar li a {
-    padding: 12px;
-    text-align: left;
-  }
-
-  .dropdown-content {
-    position: static;
-    box-shadow: none;
-  }
-
-  .searchbar,
-  .searchbtn {
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .overlay-text {
-    font-size: clamp(2rem, 10vw, 4rem);
-    letter-spacing: 0.15em;
-  }
-}
-
-
-
 nav {
-      background-color: #610a76;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+     position: sticky;
+    top: 79px;
+    z-index: 1000;
+    box-sizing: border-box;
+    margin-left: -8px;
+    padding: 0;
+    margin-right: 0 px;
 }
 
 .navbar {
@@ -97,14 +68,14 @@ li .dropdown {
   clear: both;
 }
 .searchbar {
-    margin-left: auto;
+    float: right;
     padding: 14px 2px;
     margin-right: 2px;
     border: none;
     
 }
 .searchbtn {
-    margin-left: auto;
+    float: right;
     padding:5px 21px;
     margin: 10px;
     background-color: rgb(255, 0, 76);
@@ -164,7 +135,6 @@ body {
   overflow-y: auto; /* Adds a vertical scrollbar only when needed */
   /* or use overflow-y: scroll; to always show the scrollbar */
   width: 100%; /* Optional: set width */
-  padding: -8px;
   margin: 0;
 }
 header {
@@ -172,19 +142,21 @@ header {
     top: 0;
     z-index: 1000; /* Ensure the header stays above other content */
     box-sizing: border-box;
-    margin: 0;
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-right: 0px;
     padding: 0;
     
 }
 
 .video-wrapper {
-  position: relative;   /* 🔴 REQUIRED */
+  position: relative;  
   width: 100%;
   height: 100vh;
 }
 
 video {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -200,13 +172,13 @@ video {
     position: absolute;
     top: 50%;
     left: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
     color: white;
-     font-size: clamp(2.5rem, 8vw, 6rem);
-  text-align: center;
-  padding: 0 1rem;
+    font-size: 100px;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     z-index: 1; /* Ensure the text stays above the video */
+    padding-top: 250px;
 }
