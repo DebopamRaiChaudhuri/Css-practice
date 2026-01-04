@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background video</title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        header{
+            margin: 0;
+            padding: 0;
+            display:flex
+        }
+        img{
+            height: 50px;
+            width: 50px;
+            display: inline;
+            position: absolute;
+            z-index: 3;
+            padding:13px 20px;
+        }
+        .title{
+            display: flex;
+            position: absolute;
+            
+            z-index: 3;
+            padding: 0px 77px;
+            margin: 23px 0px;
+        }
+       body{
+        background-color: black;
+        color: white;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+    
+       }
+       
+       .navigation{
+        display: flex;
+        padding: 0%;
+       margin: 43px 0px;
+    position: absolute;
+        padding-right: 0;
+       }
+
+       li{
+        
+        list-style: none ;
+        padding: 34px 24px;
+        z-index: 3;
+        padding-right: 0;
+        
+
+       }
+       section{
+        font-size: 15px;
+        height: 50vh;
+        border: 2px solid red;
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            align-items:center;
+            z-index: 4;
+            
+            
+        }
+        h3{
+            width: 100%;
+            position: absolute;
+            top: 29%;
+            font-size: 4em;
+            z-index: 2;
+            margin: 0;
+            text-align: center;
+            font-weight: 850;
+            text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.7);;
+
+        }
+        .p{
+            width: 100%;
+            position: absolute;
+            height: 2vh;
+            font-size: 1em;
+            z-index: 2;
+            margin: 0;
+            top: 53%;
+            text-align: center;
+            text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.7);;
+            padding: 0px 0px;
+
+        }
+        video{
+            height: 100vh;
+            width: 100vw;
+            top: 24%;
+            display: block;
+            position:relative;
+            object-fit: cover;
+            z-index: 0;
+        }
+        
+              
+
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="nebula transparrent.png" alt="">
+        <h2 class="title">PROJECT NEBULA</h2>
+
+    </header>
+    <header>
+    <nav class="navbar">
+        <ul class="navigation">
+    <li class="item">Home</li>
+    <li class="item">Products</li>
+    <li class="item">About</li>
+    <li class="item">Pricing</li>
+    </ul>
+    </nav>
+    </header>
+<section>
+<h3>PROJECT <br> NEBULA</h3>
+<p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio temporibus modi aliquid impedit possimus magni, maxime ratione excepturi sed quia nesciunt consectetur saepe officia?</p>
+<div class="Video1"> <video autoplay muted loop playsinline width="100%"><source src="Nebula_Video_for_Website_Background.mp4"></video>
+    </div>
+
+</section>
+
+</body>
+</html>
