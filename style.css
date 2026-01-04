@@ -1,11 +1,17 @@
+
+
+
+    
+
 nav {
      position: sticky;
     top: 79px;
     z-index: 1000;
     box-sizing: border-box;
-    margin-left: -8px;
+    margin:0;
     padding: 0;
     margin-right: 0 px;
+    width: 100vw;
 }
 
 .navbar {
@@ -69,6 +75,7 @@ li .dropdown {
 }
 .searchbar {
     float: right;
+    
     padding: 14px 2px;
     margin-right: 2px;
     border: none;
@@ -77,6 +84,7 @@ li .dropdown {
 }
 .searchbtn {
     float: right;
+    
     padding:5px 21px;
     margin: 10px;
     background-color: rgb(255, 0, 76);
@@ -94,39 +102,33 @@ ul {
     padding: 0;
 }
  
-img {
+.logo img {
+    
     width: 50px;
     height: 50px;
+    padding-left: 15px;
    
-    /* display: flex;
-    align-items: left; */
+
 } 
 p {
-    /* color: rgb(0, 0, 0);
-    font-size: 25px;
-    font-family: "Atkinson Hyperlegible Mono", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    display: flex;
-    margin: 0; */
+    
     padding-left: 5px; 
    
 
  }
 .title {
     
-    align-items: center;
-    
+    align-items: center;    
     background-color:#760c90;
     position:sticky;
     color: white;
-     font-size: 25px;
+    font-size: 25px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-weight: 700;
+    font-style: normal;
     display: flex;
+    padding-left: 10px;
     
    
    
@@ -136,55 +138,87 @@ body {
   height: 3000px; /* Set a fixed height for the container */
   overflow-y: auto; /* Adds a vertical scrollbar only when needed */
   /* or use overflow-y: scroll; to always show the scrollbar */
-  width: 100%; /* Optional: set width */
-  margin: 0;
+  /* width: 100%;*/
+  overflow-x: hidden;
+  margin: 0; 
 }
 header {
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensure the header stays above other content */
     box-sizing: border-box;
-    margin-left: -8px;
-    margin-top: -8px;
-    margin-right: 0px;
+    margin: 0;
     padding: 0;
+    width: 100vw;
     
 }
-.video-wrapper {
+ /*.video-wrapper {
+    flex-wrap: wrap;
   position: relative;  
   width: 100%;
-  height: calc(100vh - 140px);
-  overflow : hidden;
+  height: calc(100vh - 140px); 
+  height: fit-content; 
+  
+} 
+*/
 
-}
+   .container{
+    display:block;
+    height: 100vh;
+    width: 100vw;
+    /* border: 10px solid, green; */
+    z-index: 3;
+    font-size: 10px;
+    
+   }
 
-   
-
-video {
-   position: absolute;
+.video {
+    display: block;
+   position: relative;
     top: 0;
     left: 0;
+   
     width: 100%;
     height: 100%;
     margin: 0;
-    padding : 0;
-    object-fit:cover;
-    
+    padding : 0;    
     z-index: 0; /*  Ensure the video stays behind other content */
+    object-fit: contain;
+    
  }
 
 
 .overlay-text {
+    display: block;
     position:absolute;
-    top: 50%;
+    top: 58%;
     left: 50%;
-    text-align: center;
+    text-align: justify;
+    justify-content:center;
+    align-items: center;
     transform: translate(-50%, -50%);
     color: white;
-    font-size:6vw;
+    font-size: 10em;;
     font-family: "Montserrat", sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     z-index: 2; /* Ensure the text stays above the video */
    
+    
+   
 }
+@media only screen and ( max-width: 400px) { 
+    .container{
+        position: absolute;
+    }
+    .video {
+        display: block;
+        position:absolute
+    }
+    .overlay-text{
+       font-size: 4em;
+        top: 13%;
+    left: 50%;
+    }
+    
+} 
